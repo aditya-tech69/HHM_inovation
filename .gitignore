@@ -1,0 +1,12 @@
+node_modules/
+.vercel/
+*.log
+
+# Local editor/OS files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Design prototype folder (not needed for production deploy)
+stitch_hhm_innovation_luxury_homepage/
+
