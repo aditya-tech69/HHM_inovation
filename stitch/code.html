@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HHM Innovation - The Art of the Table</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "primary-dark": "#0a5aab",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111a22",
+                        "surface-dark": "#192633",
+                        "text-muted": "#92adc9",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111a22; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #233648; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #324d67; 
+        }
+
+        /* Utility to hide scrollbar but keep functionality if needed */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Glassmorphism utility */
+        .glass {
+            background: rgba(17, 26, 34, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden antialiased selection:bg-primary selection:text-white">
+<!-- Sticky Transparent Header -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass border-b border-white/5">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-3 group cursor-pointer">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold tracking-tight">HHM Innovation</h2>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-white/80 hover:text-white text-sm font-medium tracking-wide transition-colors" href="#">Collections</a>
+<a class="text-white/80 hover:text-white text-sm font-medium tracking-wide transition-colors" href="#">Stories</a>
+<a class="text-white/80 hover:text-white text-sm font-medium tracking-wide transition-colors" href="#">Craftsmanship</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-6">
+<button class="text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<div class="relative group">
+<button class="text-white hover:text-primary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="hidden lg:inline text-sm font-medium" data-cart-count>Cart (0)</span>
+</button>
+</div>
+<button class="hidden lg:flex cursor-pointer items-center justify-center rounded-lg h-9 px-5 bg-white text-background-dark text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors">
+                    Sign In
+                </button>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="w-full flex flex-col items-center">
+<!-- Hero Section: Cinematic & Typography Driven -->
+<section class="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Dark moody dinner table setting with elegant porcelain plates and wine glasses" class="w-full h-full object-cover opacity-80" data-alt="Dark elegant dinner table setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Qb7GjXQlGCLHlj3P1mXds-XOKTbqiZgI2kk7AxusY84SPXVY1VO-XEbhr0Catiknf8-u2WGJwBIPASYq1g_1PDpoH6NlV5mW56YsBhVWERsl37TkUAOKi47eiS3DEbhLz7gAYSSCUyXerSyym0oajjihHFLFu9zuht3F1BKD2Qr_Hfid0hMg70C6Gi5e2_r6zMKWy9qFgwqzIisl4WnF-knkpz8uY4rckOTDB0JtaiGNoNlGzyE0Y2V7Bn8WZJQR05yNJ4-BaTc"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark/30 via-transparent to-background-dark/90"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1440px] px-6 md:px-10 flex flex-col items-center text-center mt-20">
+<span class="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-4 animate-fade-in-up">Editorial Volume III</span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] tracking-tighter mb-6 max-w-4xl">
+                    The Art of <br class="hidden md:block"/> the Table.
+                </h1>
+<p class="text-white/80 text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-10">
+                    Forged in fire, finished in silence. Discover porcelain that brings the quiet of the cosmos to your dining room.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="h-12 px-8 rounded-lg bg-primary hover:bg-primary-dark text-white font-bold tracking-wide transition-all shadow-lg shadow-primary/20">
+                        Explore Collections
+                    </button>
+<button class="h-12 px-8 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 text-white font-medium backdrop-blur-sm transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">play_circle</span>
+                        Watch the Film
+                    </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50">
+<span class="material-symbols-outlined">keyboard_arrow_down</span>
+</div>
+</section>
+<!-- Asymmetric Grid: Collections -->
+<section class="w-full max-w-[1440px] px-6 md:px-10 py-20 md:py-32">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Curated Narratives</h2>
+<div class="h-px bg-white/10 flex-1 mx-8 hidden md:block mb-2"></div>
+<a class="text-sm font-bold text-primary hover:text-white transition-colors uppercase tracking-widest flex items-center gap-2 group" href="#">
+                    View All Stories
+                    <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Masonry-like Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-min">
+<!-- Item 1: Large Featured Image (Spans 8 cols) -->
+<div class="md:col-span-8 relative group overflow-hidden rounded-lg aspect-[16/10]">
+<img alt="Minimalist dark grey ceramic plate set on a stone surface" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist dark grey ceramic plate set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1VfOYifYIT_Qc8pW3Wics4BgA78wGJGt67oT4wl32bVASVk3WsanZH9500dsGrEVGlSlixLdBpnFLCixGIOzSXyNt0Mq0o6XuGfex6-X3p1WTFHJjZwM3lN0qopO2IDHPot8oJ2a4bmPb1SG9TPX-RiqUTlux7sDI7GupSckc0pNjZmmi65RGgvhQMmR5-QA7r2tiPUn5HCaFJagR4nWQmB4CySRQTz_CgJ3oE67OFHmE1xkCO9hU_YhQ4FWCIJda3EYeDLXiD9I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">New Arrival</span>
+<h3 class="text-white text-3xl font-bold mb-2">Midnight Glaze Series</h3>
+<p class="text-white/70 max-w-md line-clamp-2">Inspired by the Nordic winter nights, featuring a matte finish that absorbs light.</p>
+</div>
+</div>
+<!-- Item 2: Poetic Text Block (Spans 4 cols) -->
+<div class="md:col-span-4 bg-surface-dark border border-white/5 rounded-lg p-8 flex flex-col justify-center relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl">format_quote</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4">The Silence of Stone</h3>
+<p class="text-text-muted leading-relaxed mb-6 font-light">
+                        "We do not merely shape clay; we listen to it. Every curve is a conversation between the earth and the artist's hand. In the kiln, fire seals this dialogue forever."
+                    </p>
+<a class="text-white text-sm font-bold border-b border-primary pb-1 w-fit hover:text-primary transition-colors" href="#">Read the Journal</a>
+</div>
+<!-- Item 3: Vertical Detail Shot (Spans 4 cols) -->
+<div class="md:col-span-4 relative group overflow-hidden rounded-lg aspect-[3/4]">
+<img alt="Close up of a hand holding a textured artisan ceramic cup" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artisan ceramic cup close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsRBMApNtjncydXa2oI18cOEPukEkwXwWUHgFwhxKBGQgPwVptVCPwN9PDgSRgZJXuOvhFRxaX-9LqF5sBjeuIJWUuzfYAlZIczU38M7lVycEwOxRUk1Ua94ktoBSUn_oFUrjmN4iaU_yKcT5U5s2OXPwBCqrWp-8bjpRwD6Ul9xUNoavmi8tWB_17_RuE28bJwOt6KgF7GBT6wlu67sYx-U4BEk5Dt3XGaXnqclcGG3oookZNAQZ5VIszZxvCbArcHGsxxIyeNzQ"/>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-white text-2xl font-bold">Celestia</h3>
+<a class="text-white/80 text-sm mt-2 block hover:text-primary transition-colors" href="#">View Collection →</a>
+</div>
+</div>
+<!-- Item 4: Product Highlight (Spans 4 cols) -->
+<div class="md:col-span-4 relative group overflow-hidden rounded-lg bg-[#232d36] aspect-[3/4] flex flex-col">
+<div class="h-2/3 overflow-hidden relative">
+<img alt="Gold rimmed luxury white dinner plate top down view" class="w-full h-full object-cover" data-alt="Gold rimmed luxury white dinner plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgTfCDdxs0drOLf61gC3K6whfnsiUxTNDT2QjMba-LPXBJumKsDs07dRWlfWtDvs1ngx0NusclxnE5DQzuQZjwzRcrEtVLsNh3Ov7POh7_ZHlGVhbqf1vQtvgIYbmMp5pltrQnrYxMEL6UIBxDkQeZAFaEPROen6waqsoggbOZ0xzO1g1xOZBXelSUjPIWNjuyWSrsiYyM5ZkuyFwqnWDEANg1S6H-_Aad4j-gfKe2QRLWN86HlWqt-xqPxqnFtpWmBiJtJmM0Zys"/>
+<button class="absolute top-4 right-4 size-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="flex-1 p-6 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold text-white">Obsidian Tea Set</h3>
+<p class="text-text-muted text-sm mt-1">Limited Edition of 50</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<span class="text-white font-medium">$450.00</span>
+<button class="text-primary text-sm font-bold uppercase tracking-wider hover:text-white transition-colors" data-add-to-cart="obsidian-tea-set">Discover</button>
+</div>
+</div>
+</div>
+<!-- Item 5: Wide Editorial Shot (Spans 4 cols) -->
+<div class="md:col-span-4 relative group overflow-hidden rounded-lg aspect-[3/4] md:aspect-auto">
+<img alt="Potter shaping clay on a wheel in a dark workshop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0" data-alt="Potter shaping clay on wheel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVq-SCNPGapmY8GE9fPIqAIH-IxjBPXjp4JJYbeIBAY5OJuWqRL2g9uVPjFFQwI4xguhT5o3-Od09GO6UsHTcfmVum_4YWZQkUetazTWMyOfepLHWN-M83YAn1zerKKifjxUUCeBsbDzSH4Egjjd3P5g0AtFIAHB9PdzgfMwpxuLbOdbowjjCXHzHgaOZMglybUAvj9aLSK0J2-4gWIhoLoKEEIlto92vipPe2d2CyPFmC7D4NhFE2dhl7ODmmenaborrScl11BoU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-xl font-bold">Meet the Makers</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Craftsmanship / Process Section -->
+<section class="w-full bg-surface-dark border-y border-white/5 py-24">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2 flex flex-col gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Our Philosophy</span>
+<h2 class="text-4xl md:text-5xl font-black text-white leading-tight">
+                                Slow creation for <br/> a fast world.
+                            </h2>
+<p class="text-text-muted text-lg font-light leading-relaxed max-w-lg">
+                                Every piece tells a story of earth, fire, and the human hand. We believe that true luxury lies in the time taken to create something that lasts forever.
+                            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4">
+<div class="flex flex-col gap-3">
+<div class="size-12 rounded-full bg-background-dark border border-white/10 flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined">temp_preferences_custom</span>
+</div>
+<h4 class="text-white font-bold text-lg">Double Fired</h4>
+<p class="text-sm text-text-muted">Fired twice at 1300°C for exceptional durability and depth of color that withstands time.</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="size-12 rounded-full bg-background-dark border border-white/10 flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h4 class="text-white font-bold text-lg">Ethically Sourced</h4>
+<p class="text-sm text-text-muted">Clay harvested responsibly from certified sustainable quarries in Limoges, France.</p>
+</div>
+</div>
+<button class="mt-4 w-fit px-6 py-3 border-b-2 border-white hover:border-primary hover:text-primary text-white font-bold transition-colors flex items-center gap-3">
+                            Read the Full Journal
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="lg:w-1/2 w-full relative">
+<div class="grid grid-cols-2 gap-4">
+<img alt="Pottery tools lying on a wooden table covered in clay dust" class="rounded-lg w-full h-64 object-cover translate-y-8" data-alt="Pottery tools on wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmh9RFTIcht6NVcVVnHYBbhgWF5f1vp-mVv1o2uy8EG_R1zoFQdZizKG9Q2v3WGhX7ZH3rNtehUUvPwTDdfVNcZZrNnvVugaalLRPb-bSs0sK9CEX4YhB4_b35-1CQdqwvunFQmRKZBpuqzDXo08stlG0C7oId3_ZsCoIHmWlE8A14CM_f-njEPGkU1OBD8K80agvqtGmgOlzMl2apBOlnH_9EsSW3IGuo5InsQCHxZuaEbAju28JNA3hwv37Qh8-CxKCyRtok-JY"/>
+<img alt="Minimalist white plates stacked neatly" class="rounded-lg w-full h-64 object-cover" data-alt="Stacked minimalist white plates" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtj5XxMniZWgeOFCy1cqkyA4y3xAEYm_zgQ03CeGSIUbVbULkkOCh0EWxmDtN3PlKwDeiBYi24_kLI2CgFTezkPLm37MMkIuPo1dKH6m1zP4cwEj8EK81QkhE9pziqFs9BPEKLpK0wkOq1mUylTZ_KrxSqNoJka_EXDoQDomrzUD71i95910ExYemwfL1awakBmUrvwJuB6MWAhiHIr0rQhZHmzQQSFVciToy12spOHHiagiq1IVC3O9zWnIPomYjG-TcOfo35bp8"/>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[120%] rounded-full border border-white/5 opacity-50"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer / Flagship Experience -->
+<footer class="w-full bg-background-dark pt-20 pb-10 border-t border-white/5 relative overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10">
+<!-- Map and Contact Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+<!-- Text & Contact Info -->
+<div class="flex flex-col justify-between h-full order-2 lg:order-1">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Visit the Atelier</h2>
+<p class="text-text-muted max-w-md mb-10 font-light">
+                                Experience the texture and weight of our collections in person. Our flagship store offers private consultations and bespoke customization services.
+                            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
+<div>
+<h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4 border-b border-white/10 pb-2">Address</h4>
+<p class="text-text-muted text-sm leading-relaxed">
+                                        152 Mercer Street<br/>
+                                        SoHo, New York<br/>
+                                        NY 10012
+                                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase text-xs tracking-widest mb-4 border-b border-white/10 pb-2">Hours</h4>
+<p class="text-text-muted text-sm leading-relaxed">
+                                        Mon - Fri: 10am - 7pm<br/>
+                                        Sat: 11am - 6pm<br/>
+                                        Sun: By Appointment
+                                    </p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="h-12 px-6 rounded-lg bg-white text-background-dark font-bold hover:bg-gray-200 transition-colors w-fit" data-booking-button>
+                                Book Private Viewing
+                            </button>
+<a class="h-12 px-6 rounded-lg border border-white/20 text-white font-medium hover:bg-white/5 transition-colors flex items-center justify-center w-fit gap-2" href="tel:+15550192834">
+<span class="material-symbols-outlined text-sm">call</span>
+                                +1 (555) 019-2834
+                            </a>
+</div>
+</div>
+<!-- Integrated Map -->
+<div class="h-[400px] lg:h-auto w-full rounded-xl overflow-hidden relative grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500 order-1 lg:order-2 border border-white/10">
+<img alt="Map of New York City showing SoHo district location" class="w-full h-full object-cover" data-location="New York" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY_sh7jbDBpaXho7gcp5Z3DQbQAmNNF_B7ebF2zvPagoFKevbOB6f4aY86zsAvHdpilgL-QvziaDeCnNndcc9jM8tw7Fyf0fBbK2N52EjD5Zq4MkLGJnidOYsHDCJIFjUz9qmnnVqLIlbe_4npIKOMPLq-cT7ZlsatSdlhSv50LiuG4wy_7b69XdJvnB-lJsu2UYCPqfT9ZBtsBFmRzRvyRkGrHrIE4S2L7dkrFib5LGTU9NvpvlixA9pmIN6VilVY_4eYz8wBn0g"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none"></div>
+<!-- Custom Map Marker -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative flex items-center justify-center">
+<div class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></div>
+<div class="relative rounded-full size-4 bg-primary border-2 border-white"></div>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 bg-background-dark/90 backdrop-blur px-4 py-2 rounded text-xs text-white font-medium border border-white/10">
+                            Navigate
+                        </div>
+</div>
+</div>
+<!-- Bottom Footer Links -->
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-white/50">
+<div class="size-5">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-sm">© 2023 HHM Innovation. All rights reserved.</span>
+</div>
+<div class="flex gap-8">
+<a class="text-text-muted hover:text-white text-sm transition-colors" href="#">Privacy Policy</a>
+<a class="text-text-muted hover:text-white text-sm transition-colors" href="#">Terms of Service</a>
+<a class="text-text-muted hover:text-white text-sm transition-colors" href="#">Shipping &amp; Returns</a>
+</div>
+<div class="flex gap-4">
+<a class="text-white hover:text-primary transition-colors" href="#"><i class="fa-brands fa-instagram"></i></a> <!-- Assuming icons might be needed, using placeholder or text -->
+<span class="text-text-muted text-sm cursor-pointer hover:text-white">Instagram</span>
+<span class="text-text-muted text-sm cursor-pointer hover:text-white">Pinterest</span>
+</div>
+</div>
+</div>
+</footer>
+</main>
+<script src="./main.js"></script>
+</body></html>
