@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Craftsmanship | HHM Innovation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Manrope", sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+        }
+        .glass-nav {
+            background: rgba(16, 25, 34, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(16, 25, 34, 0) 0%, rgba(16, 25, 34, 1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-white/10">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="size-7" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight text-white">HHM Innovation</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-white/70 hover:text-white transition-colors" href="#kiln">Art of the Kiln</a>
+<a class="text-sm font-medium text-white/70 hover:text-white transition-colors" href="#gold">24k Gold</a>
+<a class="text-sm font-medium text-white/70 hover:text-white transition-colors" href="#sustainability">Sustainability</a>
+<a class="px-5 py-2 bg-primary rounded-full text-sm font-bold text-white hover:bg-primary/90 transition-all" href="#experience">Find a Boutique</a>
+</nav>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<section class="relative h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105" data-alt="Extreme macro shot of white porcelain surface texture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWhauIEw-nOuq69PpN6KyeYGdcTwhbpd3b41bWmOqWmN8jSzOz6lzh2sKR1Brrxxod5A69_mjhB0j2d6kVxjybn4bHAhurCAkUXDSOGdN7jage_o1bEnWuX_ayLgPryUOrPYYS5k_0L6-qQ_tBwyxidvUkFZW5Xfig6xQabXVbszPG2IXzLdn_gfwbm9WerrJwmjvxX4IJ1pz1OykoISL0maf5_6_ZIzJ3pb8cPMHwUMN6Dl3Mi75-SpBQWfH0GNuqKQgOGVjfeTo');">
+</div>
+<div class="absolute inset-0 bg-background-dark/40"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto">
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Craftsmanship</h2>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6">The Intersection of Art and Engineering.</h1>
+<p class="text-lg md:text-xl text-white/60 font-light max-w-2xl mx-auto leading-relaxed">
+                Where elemental fire meets technical precision. Every HHM piece is a testament to the pursuit of molecular perfection.
+            </p>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+<span class="material-symbols-outlined text-white text-3xl">keyboard_arrow_down</span>
+</div>
+</section>
+<section class="py-24 md:py-32 px-6" id="kiln">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="relative group">
+<div class="overflow-hidden rounded-xl bg-slate-900 border border-white/5">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Ceramic firing process in a high temperature industrial kiln" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf1_9U5xz2dIcUnxagthmSmbLpzc0SdHevHmAeG_-UY4HDfyfcCiwlgAhU8PERAt3yMx1asZzaVtB6peIWXI7pZq87BWligc8xv_kNHiaO_4QQkC2zH-z43C77gxVHQ2GAg6X48lE-dO-U3mQaKPxkXS82L_9SqtuBDd5Jqy8FRHiIow-x4DQZJeagqmPJdCctQqNKpV-z9vZCfDMJwcR4Gsb76IVR-duxzLOSKCOHZ9GlzELUbK0O5v2F0i9igsyuJT2-RMj4a2Y"/>
+</div>
+<div class="absolute -bottom-6 -right-6 p-6 bg-primary rounded-xl hidden md:block">
+<p class="text-4xl font-bold text-white">1400°C</p>
+<p class="text-xs uppercase tracking-widest text-white/80 font-semibold">Vitrification Point</p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<div class="space-y-4">
+<h3 class="text-3xl md:text-4xl font-bold text-white">The Art of the Kiln</h3>
+<p class="text-white/60 font-light leading-relaxed text-lg">
+                        Transformation occurs at the atomic level. Our proprietary kiln firing process subjects raw minerals to intense, controlled heat, creating the signature HHM translucency and unmatched tensile strength.
+                    </p>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0">thermostat</span>
+<div>
+<h4 class="font-bold text-white">Thermal Precision</h4>
+<p class="text-white/50 text-sm">Computer-calibrated ramp cycles ensure zero internal stress during cooling.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0">text_analysis</span>
+<div>
+<h4 class="font-bold text-white">Molecular Bonding</h4>
+<p class="text-white/50 text-sm">Silica and kaolin fuse into a single, non-porous crystalline structure.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative min-h-[80vh] flex items-center bg-black overflow-hidden" id="gold">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="Liquid gold paint being applied with a fine brush to a plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANNHu69HZEDpJ_UpTjDoMU_Uka8hDH2cMDj7mT1fHfLHXRF7UeLYOKHasKQSnThVF14OZkAthz1qaucEmfI9EYELG__yF4pjNAQ38mlcAxSCdjhEYoihUE6Yn3TVAJ-2lpVoM5OSgv424XxQ_2BRqaoP_SYovF6Kl6_vWucpFv10jXln8zWpOFSUYvDIBXsxDfMQKJRyKh4vfzQMB6BaZnJ1nrV3XwD1VJzE0mOhGczZVjeaGxWKWmJHVeSC-lRfYPZ1fl8xh_kDU"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/80 to-transparent"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full py-20">
+<div class="max-w-xl space-y-8">
+<h2 class="text-4xl md:text-6xl font-bold text-white tracking-tight leading-none">Hand-Painted <br/><span class="text-primary">24k Gold.</span></h2>
+<p class="text-xl text-white/70 font-light leading-relaxed">
+                    A steady hand and a timeless material. Our artisans apply liquid 24k gold leaf using specialized squirrel-hair brushes, ensuring a layer that is both visually striking and chemically bonded to the glaze.
+                </p>
+<div class="flex flex-wrap gap-10 pt-4">
+<div class="text-center">
+<p class="text-3xl font-bold text-white">99.9%</p>
+<p class="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Gold Purity</p>
+</div>
+<div class="text-center">
+<p class="text-3xl font-bold text-white">12hr</p>
+<p class="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Curing Process</p>
+</div>
+<div class="text-center">
+<p class="text-3xl font-bold text-white">100%</p>
+<p class="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold">Hand Crafted</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 md:py-32 px-6 bg-[#15202b]" id="sustainability">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+<h3 class="text-primary font-bold tracking-widest uppercase text-sm">Responsibility</h3>
+<h2 class="text-4xl md:text-5xl font-bold text-white">Sustainable Sourcing</h2>
+<p class="text-white/60 font-light text-lg">Luxury without compromise. We meticulously select minerals and manage our impact on the environments that provide them.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-background-dark/50 p-8 rounded-xl border border-white/5 hover:border-primary/50 transition-colors group">
+<div class="size-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white">eco</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-3">Ethical Extraction</h4>
+<p class="text-white/50 text-sm leading-relaxed">We partner exclusively with mining operations that adhere to strict environmental remediation and labor standards.</p>
+</div>
+<div class="bg-background-dark/50 p-8 rounded-xl border border-white/5 hover:border-primary/50 transition-colors group">
+<div class="size-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white">recycling</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-3">Zero-Waste Glaze</h4>
+<p class="text-white/50 text-sm leading-relaxed">Our advanced recovery system filters and recycles 98% of glaze overspray, returning it to the production cycle.</p>
+</div>
+<div class="bg-background-dark/50 p-8 rounded-xl border border-white/5 hover:border-primary/50 transition-colors group">
+<div class="size-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white">water_drop</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-3">Closed-Loop Water</h4>
+<p class="text-white/50 text-sm leading-relaxed">Industrial water is purified through on-site reverse osmosis before being reintroduced to our ceramic mixing tanks.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6" id="experience">
+<div class="max-w-7xl mx-auto overflow-hidden bg-background-dark border border-white/10 rounded-3xl">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-10 md:p-20 space-y-8 flex flex-col justify-center">
+<h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Feel the Texture.</h2>
+<p class="text-white/60 font-light text-lg leading-relaxed">
+                        Imagery can only convey so much. To truly appreciate the weight of our bone china and the fine texture of our gold leaf, we invite you to experience them in person.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-2">
+                            Find a Boutique <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+<button class="px-8 py-4 bg-white/5 text-white font-bold rounded-lg hover:bg-white/10 transition-all border border-white/10">
+                            Book a Consultation
+                        </button>
+</div>
+</div>
+<div class="h-80 md:h-auto min-h-[400px] relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center grayscale brightness-50" data-alt="Modern minimalist storefront in Tokyo" data-location="Tokyo, Japan" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqlMoBWGXm6hP-wlxCdVF-XrkDH38aeLIgZUhtv5kX6qkuB5IaUIR8gGo7BmjVz-aaSLDB9Ss2VLKsUpTrsn5VDFtpcGfACDmpkXDY0xPpHh6x9yZ4iUdvYszKJ0IDujKTTfnH6g-WoXJVZ2IEsSLRNHsaC5NtzFTNmi9nxWsU7uVrXbRkpCH6g6jqjPo6-4OGDe1A17457HBjHGU6HaMHpVz4xW4kJxFHJk01yLdtTje2e_MTmOcRRzpHrcpCZ8WSJIDpvLyneY8');">
+</div>
+<div class="absolute bottom-8 left-8 p-4 glass-nav rounded-lg border border-white/10">
+<p class="text-primary font-bold text-xs uppercase tracking-widest mb-1">Global Flagship</p>
+<p class="text-white font-bold">Ginza, Tokyo</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="py-12 px-6 border-t border-white/5">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2 opacity-50">
+<span class="text-sm font-bold text-white">HHM Innovation</span>
+<span class="text-xs text-white/50">© 2024. All rights reserved.</span>
+</div>
+<div class="flex gap-8">
+<a class="text-xs text-white/40 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-xs text-white/40 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-xs text-white/40 hover:text-white transition-colors" href="#">Cookie Settings</a>
+</div>
+<div class="flex gap-4">
+<a class="size-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="size-4 fill-white" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="size-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<svg class="size-4 fill-white" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
+

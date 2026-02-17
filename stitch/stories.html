@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brand Stories | HHM Innovation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c6a87c","background-light": "#f6f7f8",
+                        "background-dark": "#0a0a0a",
+                        "stone-900": "#1c1917",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    backgroundImage: {
+                        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Manrope", sans-serif;
+        }
+        h1, h2, h3, h4, .serif-text {
+            font-family: "Playfair Display", serif;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-glow {
+            text-shadow: 0 0 30px rgba(198, 168, 124, 0.2);
+        }
+        .image-reveal {
+            clip-path: inset(0 0 0 0);
+            transition: clip-path 1s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-stone-200 font-display selection:bg-primary/30 antialiased">
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-white/5 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 border border-primary/30 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-lg">diamond</span>
+</div>
+<div class="flex flex-col">
+<span class="text-lg font-serif italic text-white tracking-wide">HHM Innovation</span>
+<span class="text-[10px] text-primary uppercase tracking-[0.3em]">Atelier</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-xs font-medium tracking-[0.2em] uppercase text-stone-400 hover:text-primary transition-colors" href="#origin">The Obsidian Origin</a>
+<a class="text-xs font-medium tracking-[0.2em] uppercase text-stone-400 hover:text-primary transition-colors" href="#maker">The Maker&apos;s Mark</a>
+<a class="text-xs font-medium tracking-[0.2em] uppercase text-stone-400 hover:text-primary transition-colors" href="#legacy">Legacy</a>
+</div>
+<div class="flex items-center gap-6">
+<a class="hidden md:block text-xs font-bold tracking-widest uppercase text-white hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-1" href="#visit">
+                Visit Us
+            </a>
+<button class="p-2 hover:bg-white/5 rounded-full transition-colors text-white">
+<span class="material-symbols-outlined font-light">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<section class="relative h-[110vh] w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Atmospheric obsidian landscape" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiaYiTvi5Ut7d1pCQ2o0o97GjMJriAIUHW3QOQnANruMbrcZQNSX_xzStmIe_y2gap6AvaHR0HoyQFFm96GaUhh6-HL_2jmM8rpUNa7vzuTb7OWINsQ-a522kk38XMR5vBodnUUqLi2nSW6zE9cV0Pcm2Gt9SE_Q3xXwTuauRHp3RQ_ZVR_MYDjhDHzC0Plc7XZaCMX89LD4QQZ3UDvPLXJHMWmGf_mPzmcfNg8Ij_uGdVG60zkw0pAu3vTfFV8Gz1CsB-ionAt58"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark/30 via-background-dark/20 to-background-dark"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-transparent via-background-dark/40 to-background-dark"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-20">
+<div class="mb-8 inline-flex items-center gap-4 text-primary/80">
+<span class="h-px w-12 bg-primary/50"></span>
+<span class="text-xs font-serif italic tracking-wider">A Brand Story</span>
+<span class="h-px w-12 bg-primary/50"></span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-9xl font-serif text-white mb-8 leading-[0.85] tracking-tight">
+            Poetry in <br/><span class="text-primary italic pr-4">Stone.</span>
+        </h1>
+<p class="text-lg md:text-2xl text-stone-300 max-w-2xl mx-auto font-light leading-relaxed font-serif italic">
+            &quot;We do not merely shape clay; we curate silence, weight, and memory.&quot;
+        </p>
+<div class="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+<span class="text-[10px] uppercase tracking-[0.3em] text-stone-500">The Journey Begins</span>
+<div class="h-16 w-px bg-gradient-to-b from-stone-500 to-transparent"></div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 bg-background-dark relative" id="origin">
+<div class="max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 space-y-10 relative z-10">
+<span class="text-primary text-9xl font-serif absolute -top-20 -left-10 opacity-10 select-none">01</span>
+<div>
+<span class="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-4 block">Chapter I</span>
+<h2 class="text-5xl md:text-6xl text-white mb-8">The Obsidian Origin</h2>
+</div>
+<div class="space-y-6 text-lg font-light text-stone-400 leading-relaxed">
+<p>
+                        Before the kiln, before the wheel, there was the volcano. Our journey begins in the desolate beauty of the highlands, where the earth breathes fire and stone is born from chaos.
+                    </p>
+<p>
+                        The Obsidian Series is an homage to this raw power. We sought to capture not just the color, but the feeling of volcanic glass—cool to the touch, heavy with history, and possessing a depth that absorbs light rather than reflecting it.
+                    </p>
+</div>
+<div class="pt-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary font-light text-3xl">landscape</span>
+<div class="text-xs tracking-widest uppercase text-stone-500">
+                            Sourced from sustainable<br/>mineral deposits
+                        </div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 relative group">
+<div class="aspect-[4/5] overflow-hidden relative">
+<div class="absolute inset-0 bg-stone-900/20 z-10 group-hover:bg-transparent transition-colors duration-700"></div>
+<img alt="Volcanic landscape inspiration" class="w-full h-full object-cover opacity-90 grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdyJtLxv_S0QHHtAWdKqe1z-CJ5q_dQGAJsD8Hghq7i1eP1Acag77bSve5IM9BAmDWrcgdBVuv1KnBb3DDUV6wS9wtecaxqfjAPq-6qD5DWX8srxN-pxPEW-eVZiijMmMoxU0AQISN2umtSyGf1ut-yzQMvlhV03sTf8SjsgHXBIy28_jHs3kTB1spzM9LAren3BVE4oqOCMY1iR2UChVie4W_H3dcPXUQ9OtAyvEYUO-xLZoBHNYDXBJCJsV7hJbERlzg-VSPYEk"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-1/2 aspect-square border border-white/10 bg-background-dark p-2 hidden md:block">
+<img alt="Raw texture detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Y4uGyUz_i3CDErKZyBF2wzpKTCmieOVCyAhlHFqFSaFjsMJ0-_GXyU8ovS4lhuLJQNvdkawV9m1VYzD16x7opDPCLSaDMC_e1-UEOOwveoseQ3Gveqjv47_dPWp42NE9gNwRtaZ04aVhfirR2oRbM26_a7v7frdjgVPQqXH5ywb5zb9Y-IzHe-yEKmzCDSY8jQNJvORB1O0Q3plGwv_Q2vkdL79OUql4g88YLj33ORM9fknPR2aYqycIFyZfmeYYV7AYX5uPRz0"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-stone-900 flex items-center justify-center px-6">
+<div class="max-w-4xl text-center">
+<span class="material-symbols-outlined text-primary/40 text-6xl mb-6">format_quote</span>
+<p class="text-3xl md:text-5xl font-serif text-white leading-tight italic">
+            True luxury is not about adding more, but stripping away until only the essential truth remains.
+        </p>
+<div class="mt-8 text-sm tracking-[0.2em] uppercase text-primary">— Head Artisan, HHM Innovation</div>
+</div>
+</section>
+<section class="py-32 px-6 bg-background-dark" id="maker">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="relative">
+<span class="text-primary text-9xl font-serif absolute -top-20 -left-10 opacity-10 select-none">02</span>
+<span class="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-4 block">Chapter II</span>
+<h2 class="text-5xl md:text-6xl text-white">The Maker&apos;s Mark</h2>
+</div>
+<p class="max-w-md text-stone-400 font-light leading-relaxed text-right md:text-left">
+                In an era of mass production, we choose the path of resistance. Every plate, every bowl carries the faint, deliberate imprint of the human hand.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 gap-y-24">
+<div class="group cursor-pointer">
+<div class="overflow-hidden aspect-[4/3] mb-6 relative">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all duration-700 z-10"></div>
+<img alt="Artisan hands shaping clay" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlG2Xk0s7sdVTtqSr5c3zQ0EcSTkl4aWhqbYPGq0Exj-U0yYYlV1joVN5nze6-_ZBLsCtCwBuPUXWHPGor1xPy78OyWmVDlTZn5xHzSldVi0DsXnhwXNjDmXIYYcJ7br4mkCXJLTg47otjCWxBb0s-Wj7aXZIMMjWpeFOUeOJi4mK_o1vr8Y1cVcMDKWKmGmiPCxbZt42gJUmISN6m9Ck2inG62V0XdPLKKSUN55DXr64W5x1SEosy1li-SJfnnUrXB5uZoSFDt2Q"/>
+</div>
+<div class="flex gap-6 items-start">
+<span class="text-4xl font-serif text-primary/50">I.</span>
+<div>
+<h3 class="text-2xl font-serif text-white mb-2 group-hover:text-primary transition-colors">The Conversation of Clay</h3>
+<p class="text-stone-500 font-light text-sm leading-relaxed max-w-sm">
+                            The clay is not forced into shape; it is guided. Our artisans spend years learning to listen to the material, finding the balance between structure and fluidity.
+                        </p>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer md:mt-32">
+<div class="overflow-hidden aspect-[4/3] mb-6 relative">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all duration-700 z-10"></div>
+<img alt="Glazing process" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI3YNVe3w5cVm0vSR2VtfJv6futcvF6CfbaZvoyD1tUKSMdU_ytVBpUq75P_Ww9zSi4_m7srC35_mYOSncrMoDNFo696fiGDU2HytxmyKZbsYpYMgZX1U0eELNJE__jmiN0lV8zpMlByRUKC4DCa6495e_NeGq665IqSN6-MOG0TNA3hcwT0oX4gGYpYOjlh40fq9cv_0y-3xvXid2_rTrQOo3EotgxzCU24zS4gQF2tkDyrXOR2ODUr6Iy7dW2WIVzI2V9vi-JZM"/>
+</div>
+<div class="flex gap-6 items-start">
+<span class="text-4xl font-serif text-primary/50">II.</span>
+<div>
+<h3 class="text-2xl font-serif text-white mb-2 group-hover:text-primary transition-colors">Shadow &amp; Glaze</h3>
+<p class="text-stone-500 font-light text-sm leading-relaxed max-w-sm">
+                            Our signature &apos;Obsidian&apos; glaze is applied in layers. It is designed to interact with candlelight, creating a dining landscape of deep shadows and subtle highlights.
+                        </p>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden aspect-[4/3] mb-6 relative">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all duration-700 z-10"></div>
+<img alt="Kiln firing" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEJ4cxLWAKRv3FbRii77nWxC1TIECifud7y8W7HDSf8q2PbSuToTvCkX61tnvYZebMqUvRqFXCIzCWFpHM9I4mgp4pGVSrLOszaowQHYKbKoFf_p55oZEYw-dAvs5ZngBS-TkSERiASNeXQ5wivB0ed5722ZyznF-GmiJAGssj61WXIeSuX6Skun_uyCeaNwCMtwqC2at6EV8eZLJIc2ItjsF7gWt3Bl2tePvIe7gbgPCEycQzyTsPzJVzieqFCsgx4pDJt1NeViI"/>
+</div>
+<div class="flex gap-6 items-start">
+<span class="text-4xl font-serif text-primary/50">III.</span>
+<div>
+<h3 class="text-2xl font-serif text-white mb-2 group-hover:text-primary transition-colors">Trial by Fire</h3>
+<p class="text-stone-500 font-light text-sm leading-relaxed max-w-sm">
+                            At 1,300°C, the object is reborn. The heat transforms the fragile earth into stone-like porcelain, sealing the maker&apos;s intent forever.
+                        </p>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center items-center md:items-start p-12 md:p-24 border border-white/5 bg-white/[0.02] md:mt-32">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl">fingerprint</span>
+<h3 class="text-3xl font-serif text-white mb-6">Imperfection as Signature</h3>
+<p class="text-stone-400 font-light leading-relaxed mb-8">
+                    We do not reject slight variations; we celebrate them. A subtle asymmetry in the rim, a unique pooling of glaze—these are the fingerprints of the process, ensuring your collection is truly one of a kind.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<section class="h-[80vh] w-full relative overflow-hidden flex items-center justify-center bg-fixed bg-cover bg-center" id="legacy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCpnpAKpRaQIdSpSj3vfDbfgQpsciiHDaLo3sDmceb0VjpIIIgfwAhIJnB9f1YHP1NY5WRM2qdesD13jGdnA2GdjjAGKDkfVi50ez9lD9o75hi1_gbSY4V4ruHrQlxQbfHZsHnXwUV8FUOXX2FplTlji1zq7cujB1aTsHC9Gisx3eXFCPr41_bVaOqo0TxOas7rrzVnrX8zvjOkbF2ztmha1FYrsCsivR_aaCTTV4ZtDB1NVE87PVusxEmz8htVKJ-NU-tFbkDSQ8');">
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="relative z-10 text-center max-w-3xl px-6">
+<h2 class="text-6xl md:text-8xl font-serif text-white mb-8 tracking-tighter">
+            Timeless<br/><span class="italic text-primary">Presence</span>
+        </h2>
+<p class="text-xl text-stone-300 font-light leading-relaxed">
+            Designed not just for the table, but for the atmosphere of the room.
+        </p>
+</div>
+</section>
+<section class="py-40 px-6 bg-[#0f0f0f] relative overflow-hidden" id="visit">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#151515] to-transparent pointer-events-none"></div>
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center relative z-10">
+<div class="space-y-12">
+<div>
+<span class="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-4 block">The Experience</span>
+<h2 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">Touch the <br/> <span class="italic text-stone-500">Narrative.</span></h2>
+<p class="text-lg text-stone-400 font-light leading-relaxed max-w-lg">
+                    Photography captures the light, but only the hand can understand the weight. We invite you to our private viewing room to experience the Obsidian Series in its intended setting.
+                </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4 p-6 border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary mt-1 group-hover:scale-110 transition-transform">calendar_month</span>
+<div>
+<h4 class="text-white font-serif text-xl mb-1">Book a Private Viewing</h4>
+<p class="text-stone-500 text-sm mb-4">Reserve a 1-hour session with a design consultant.</p>
+<span class="text-xs uppercase tracking-widest text-primary border-b border-primary/50 pb-0.5">Schedule Appointment</span>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary mt-1 group-hover:scale-110 transition-transform">storefront</span>
+<div>
+<h4 class="text-white font-serif text-xl mb-1">Visit the Atelier</h4>
+<p class="text-stone-500 text-sm mb-4">Open to the public: Tue - Sat, 10am - 6pm.</p>
+<span class="text-xs uppercase tracking-widest text-primary border-b border-primary/50 pb-0.5">View Locations</span>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="w-full aspect-square border border-white/10 rounded-full flex items-center justify-center p-12 relative">
+<div class="absolute inset-0 border border-white/5 rounded-full scale-75 animate-[spin_60s_linear_infinite]"></div>
+<div class="absolute inset-0 border border-dashed border-white/10 rounded-full scale-50"></div>
+<div class="text-center space-y-8 z-10">
+<div>
+<span class="block text-2xl font-serif text-white">London</span>
+<span class="block text-xs uppercase tracking-widest text-stone-500 mt-1">14 Savile Row, Mayfair</span>
+</div>
+<div class="w-px h-12 bg-white/10 mx-auto"></div>
+<div>
+<span class="block text-2xl font-serif text-white">New York</span>
+<span class="block text-xs uppercase tracking-widest text-stone-500 mt-1">SoHo Design District</span>
+</div>
+<div class="w-px h-12 bg-white/10 mx-auto"></div>
+<div>
+<span class="block text-2xl font-serif text-white">Paris</span>
+<span class="block text-xs uppercase tracking-widest text-stone-500 mt-1">Le Marais</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-background-dark py-20 px-6 border-t border-white/5">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 border border-primary/30 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm">diamond</span>
+</div>
+<span class="text-xl font-serif italic text-white tracking-wide">HHM Innovation</span>
+</div>
+<div class="flex gap-8 md:gap-16 flex-wrap">
+<div>
+<h4 class="text-xs font-bold tracking-[0.2em] uppercase text-stone-500 mb-6">Narratives</h4>
+<ul class="space-y-4 text-stone-400 text-sm font-light">
+<li><a class="hover:text-primary transition-colors" href="#origin">Obsidian Origin</a></li>
+<li><a class="hover:text-primary transition-colors" href="#maker">Maker&apos;s Mark</a></li>
+<li><a class="hover:text-primary transition-colors" href="#legacy">Materiality</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold tracking-[0.2em] uppercase text-stone-500 mb-6">Atelier</h4>
+<ul class="space-y-4 text-stone-400 text-sm font-light">
+<li><a class="hover:text-primary transition-colors" href="#visit">Locations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Appointments</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Events</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-bold tracking-[0.2em] uppercase text-stone-500 mb-6">Social</h4>
+<ul class="space-y-4 text-stone-400 text-sm font-light">
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pinterest</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[10px] text-stone-600 uppercase tracking-widest">© 2024 HHM Innovation. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
+
